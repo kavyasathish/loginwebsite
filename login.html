@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+    <title>Login Form</title>
+
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <form name="regForm" id="loginform" onsubmit="return loginvalidate()" method="post">
+            <h1>&#9642; Login Form &#9642;</h1>
+                
+                <div class="form-wrapper">
+                    <input type="text" id="email"  placeholder="* Email Adress" class="form-control">
+                    <span id="errorEmail"></span>
+                </div>
+                
+                <div class="form-ps-control">
+                    <input type="password" id="password" placeholder="* Password" >
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    
+                </div>
+                <span id="errorPassword"></span>
+                <br>
+                
+                <button type="submit" id="btnLogin" ><a href="zomato.html"> Login</a></button>
+                <p style="text-align:center;">Create an account? <span><a href="index.html"> Sign In</a></span></p>
+            </form>
+        </div>
+    </div>
+
+  <script>
+
+
+    
+    //Login Check
+    
+    //var login = document.getElementById('btnLogin');
+    const loginperson = (p) => {
+        p.preventDefault();
+        
+    //take value which is type user login page
+    var emailAdress = document.getElementById('email').value;
+    var passwordInfo = document.getElementById('password').value;
+    //get the values from local storage
+    var person = localStorage.getItem(email,'email');
+    var obj = JSON.parse(person);
+
+   
+   // var emailLocalStorage = obj.email;
+   // var passwordLocalStorage = obj.password;
+    
+    let ret_value = false
+    ret_value = loginvalidate(person);
+    document.forms[0].reset(); //to clear the form for next entry
+    //get values from local storage
+   
+    }
+    document.addEventListener('DOMContentLoaded', () =>{
+    document.getElementById('btnLogin').addEventListener('click', loginperson);
+
+    });
+
+        
+   
+
+        //function for togling password
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+
+    </script>  
+
+</body>
+</html>

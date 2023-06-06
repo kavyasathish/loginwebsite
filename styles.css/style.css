@@ -1,0 +1,116 @@
+.wrapper{
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{
+    padding: 80px;
+    background: rgb(66, 197, 206);
+    min-width: 550px;
+    margin: auto;
+    display: flex;
+}
+
+.password-container i {
+    margin-left: -30;
+    cursor: pointer;
+    display: flex;
+}
+.inner form{
+    width: 60%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.inner h1{
+    position: relative;
+    left: 30%;
+    text-align: center;
+    
+}
+.form-wrapper{
+    position: relative;
+}
+
+
+.form-ps-control {
+    border: 1px solid #333;
+    border: none;
+    border-bottom: 1px solid #333;
+    display: block;
+    width: 150%;
+    height: 60px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    background: rgb(66, 197, 206);
+    display:flex;
+    align-items: center;
+    
+    
+}
+.form-ps-control input{
+    border: none;
+    width: 150%;
+    height: 60px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    background: rgb(66, 197, 206);
+    display:flex;
+    align-items: center;  
+    outline-width: 0;
+    
+}
+.form-control{
+    border: 1px solid #333;
+    border: none;
+    border-bottom: 1px solid #333;
+    display: block;
+    width: 150%;
+    height: 60px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    outline-width: 0;
+    background: rgb(66, 197, 206);
+
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(29, 25, 25);
+    font-size: large;
+}
+
+button{
+    border: none;
+    width: 350px;
+    height: 50px;
+    margin:auto;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    text-align: center;
+    padding-left: 0;
+    background: rgb(39, 39, 116);
+    font-size: 30px;
+    color: whitesmoke;
+     border-radius: 12px;
+
+}
+p{
+    color: white;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+p span{
+    color: rgb(29, 25, 25);
+    font-weight: bolder;
+}
+
+#btnLogin a{
+    text-decoration: none !important;
+} 

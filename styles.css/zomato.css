@@ -1,0 +1,140 @@
+body{
+    padding:1% 21%;
+}
+
+.topnav1 {
+    overflow: hidden;
+    background-color: white;
+    justify-content: center;
+  }
+  .topnav2{
+    overflow: hidden;
+    background-color: white;
+    align-content: center;
+  }
+
+  
+  /* Style the links inside the navigation bar */
+  .topnav1 a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none!important;;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover 
+  .topnav1 a:hover {
+    background-color: #ddd;
+    color: black;
+  }*/
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav1 a.active {
+    color: red;
+    font-weight: 500;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav1 input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav2 a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none!important;;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  /* Change the color of links on hover 
+    background-color: #ddd;
+    color: black;
+  }*/
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav2 a.active {
+    color: red;
+    font-weight: 500;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav2 input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  .orderlist {
+    background-color: #f6f6fc;
+    color: #131422;
+    position: relative;
+    padding: 30px 30px;
+  }
+  
+  .foodslist{
+    overflow:hidden;
+    white-space:nowrap;
+    display: flex;
+  }
+  .foodslist img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+      
+  }
+  .parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.child{
+    flex-basis: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 0.1rem solid rgb(232,232,232);
+    border-radius: 1rem;
+}
+.child img{
+width: 100%;
+}
+ .row {
+  display: table-row;
+}
+.row div {
+  display: table-cell;
+}
+  img:hover{
+    border-color: rgb(232,232,232);
+    box-shadow: rgb(28 28 28 /12%) 0px 0.4rem 1.8rem;
+    box-sizing: border-box;
+  }
+ 
